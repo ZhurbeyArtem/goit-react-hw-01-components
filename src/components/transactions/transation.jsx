@@ -2,7 +2,6 @@ import React from "react";
 import './style.css'
 
 const Transation = ({ props }) => {
-  console.log(props);
   return (
     <table className="transaction-history">
       <thead>
