@@ -1,0 +1,33 @@
+.friend-list {
+  margin: 0 auto;
+  width: 200px;
+}
+.friend {
+  padding: 5px 10px;
+  height: 50px;
+  width: 200px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  border: 1px solid black;
+  gap: 10px;
+  margin: 5px 0;
+}
+
+.status {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.online {
+  background-color: green;
+}
+.offline {
+  background-color: red;
+}
+
+.friend-avatar {
+  width: 50px;
+  height: 50px;
+}
