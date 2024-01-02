@@ -1,14 +1,16 @@
 import React from "react";
-import "./style.css";
+import s from "./style.module.css";
 
 const Friends = ({ props }) => {
   return (
-    <ul className="friend-list">
+    <ul className={s.friendList}>
       {props.map((el) => (
-        <li key={el.id} className="friend">
-          <span className={`status ${el.isOnline ? "online" : "offline"}`}></span>
-          <img className="friend-avatar" src={el.avatar} alt="avatar" />
-          <span className="name">{el.name}</span>
+        <li key={el.id} className={s.friend}>
+          <span
+            className={`${s.status} ${el.isOnline ? s.online : s.offline}`}
+          ></span>
+          <img className={s.friendAvatar} src={el.avatar} alt="avatar" />
+          <span className={s.name}>{el.name}</span>
         </li>
       ))}
     </ul>

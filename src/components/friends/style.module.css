@@ -1,4 +1,4 @@
-.friend-list {
+.friendList {
   margin: 0 auto;
   width: 200px;
 }
@@ -27,7 +27,7 @@
   background-color: red;
 }
 
-.friend-avatar {
+.friendAvatar {
   width: 50px;
   height: 50px;
 }

@@ -1,21 +1,21 @@
-.transaction-history {
+.transactionHistory {
   margin: 0 auto;
   width: 500px;
   text-align: center;
   padding: 10px;
   border: 1px solid black;
 }
-.table-header {
+.tableHeader {
   background-color: deepskyblue;
 }
-.table-item {
+.tableItem {
   background-color: ghostwhite;
 }
-.table-item:nth-child(odd) {
+.tableItem:nth-child(odd) {
   background-color: pink;
 }
-.table-item td,
-.table-header th {
+.tableItem td,
+.tableHeader th {
   font-size: 16px;
   padding: 10px;
 }

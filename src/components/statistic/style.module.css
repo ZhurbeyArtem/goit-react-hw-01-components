@@ -7,7 +7,7 @@
   padding: 20px;
   text-align: center;
 }
-.stat-list{
+.statList{
   display: flex;
   list-style: none;
   justify-content: space-between;

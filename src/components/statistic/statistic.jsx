@@ -1,16 +1,16 @@
-import React from "react";
-import "./style.css";
+import React from 'react';
+import s from './style.module.css';
 
 const Statistic = ({ title, stats }) => {
   return (
-      <section className="statistics">
-        <h2 className="title">{title ? title : `Upload stats`}</h2>
+      <section className={s.statistics}>
+        <h2 className={s.title}>{title ? title : `Upload stats`}</h2>
 
-        <ul className="stat-list">
+        <ul className={s.statList}>
           {stats.map((el) => (
-            <li className="item" key={el.id}>
-              <span className="label">{el.label}</span>
-              <span className="percentage">{el.percentage}%</span>
+            <li className={s.item} key={el.id}>
+              <span className={s.label}>{el.label}</span>
+              <span className={s.percentage}>{el.percentage}%</span>
             </li>
           ))}
         </ul>

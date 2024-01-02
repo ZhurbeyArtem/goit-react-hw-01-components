@@ -1,11 +1,11 @@
-import React from "react";
-import './style.css'
+import React from 'react';
+import s from './style.module.css'
 
 const Transation = ({ props }) => {
   return (
-    <table className="transaction-history">
+    <table className={s.transactionHistory}>
       <thead>
-        <tr className="table-header">
+        <tr className={s.tableHeader}>
           <th>Type</th>
           <th>Amount</th>
           <th>Currency</th>
@@ -14,7 +14,7 @@ const Transation = ({ props }) => {
 
       <tbody>
         {props.map((el) => (
-          <tr key={el.id} className="table-item">
+          <tr key={el.id} className={s.tableItem}>
             <td>{el.type}</td>
             <td>{el.amount}</td>
             <td>{el.currency}</td>
